@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Junio 2024 - Octubre 2024",
+    title: "Analista de Incidencias TI Banca",
+    company: "Zoluxiones",
+    description:
+      "Brindé soporte técnico a usuarios del cliente Banbif, gestionando y resolviendo incidencias a través de la plataforma de tickets Aranda. Utilicé herramientas como New Relic para identificar las causas raíz de los problemas y realicé pruebas en ambientes de UAT y producción. También mejoré módulos de las API’s desarrolladas en Java y Spring Boot, y optimicé el frontend con Angular, contribuyendo a mejorar la estabilidad y funcionalidad del sistema.",
+  },
+  {
+    date: "Junio 2023 - Abril 2024",
+    title: "Fullstack Developer",
+    company: "W & J CONSULTORIA INTEGRAL DE SOFTWARE",
+    description:
+      "Desarrollé e implementé un sistema integral de gestión de trámites municipales, liderando el desarrollo full-stack con Angular para el frontend, NestJS para la API RESTful del backend, y PostgreSQL para el modelado y gestión de base de datos. Integré servicios AWS S3 para el almacenamiento de documentos, implementé autenticación JWT con manejo de roles, y documenté la API utilizando Swagger, siguiendo principios SOLID y patrones de diseño.",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
